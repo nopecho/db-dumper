@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  migration:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./dump:/work
